@@ -2,6 +2,8 @@
 Nextflow pipeline for nanopore metagenomic assemblies and read classification\
 Author: **Justin Paul Hawkins**
 
+This is a pipeline I put together to assist in my work in classifying metagenomic sequencing runs and performing de novo assemblies from low quality samples. Program parameters are adjusted for my use, but can be changed within the .nf file without issue.
+
 This pipeline will default perform adapter and quality trimming using **Porechop** and **Fastplong**, read classification using **Kraken2**, metagenomic De Novo assemblies using **Flye, Canu, and MetaMDBG**, and identify assembled contigs using **DIAMOND**.
 
 Options also exsist for read de-hosting with **Hostile**, read filtering by taxid with **Krakentools**, and **BlastN**. See help for full list of commands.
