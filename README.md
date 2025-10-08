@@ -20,6 +20,11 @@ nextflow run nf_metaAssemble.nf --analysis <abs path to folder wtih .fastq reads
 --diamonddb <abs to diamond db> \
 -c config/base.config
 ```
+For help with pipeline
+```
+nextflow run nf_metaAssemble.nf --help
+```
+
 # Flags
 **--taxid <taxid>**        (Default 1, all reads, change to desired taxid to filter, requires kraken2)\
 **--single**               (Set to only get requested taxid reads, skips unclassified and root reads\
